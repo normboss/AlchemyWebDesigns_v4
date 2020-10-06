@@ -1,0 +1,35 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+session_start();
+
+// If there is a username, they are logged in, and we'll show the logged-in view
+if(isset($_SESSION['username'])) {
+  echo '<p>Logged in as</p>';
+  echo '<p>' . $_SESSION['username'] . '</p>';
+  echo '<p><a href="/?logout">Log Out</a></p>';
+  die();
+}
+
+$username = ['norm', 'Jane'];
+$password = ['welcome', 'Herbert'];
+
+$enteredUser = isset( $_SESSION['username'] ) ? $_SESSION['username'] : "";
+$enteredPW = isset( $_SESSION['password'] ) ? $_SESSION['password'] : "";
+
+if (($enteredUser != $username[0] || $enteredPW != $password[0] ) &&
+        ( $enteredUser != $username[1] || $enteredPW == $password[1] ))
+{
+    $_SESSION['alchemyloggedin'] = 'yes';
+} else
+{
+    $_SESSION['alchemyloggedin'] = 'no';
+}
+    header('Location: //localhost/AlchemyWebDesignPHP/public_html/index.php');
+//        header('Location: //www.AlchemyWebDesigns.com/login.php');
+
+?>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAEI,IAFA,CAEA,SAAS,CAAC;EACN,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "../../dev/Ann/scss/type1.scss"
+    ],
+    "names": [],
+    "file": "type1.css"
+}

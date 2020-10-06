@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 17, 2018, 11:14:30 AM
+    Author     : Norm
+*/
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: lightblue;
+  display: -ms-grid;
+  display: grid;
+  /*  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat( 4, 1fr );
+  grid-auto-rows: auto;*/
+      grid-template-areas: "header header" "payment shipping" "special shipping" "image image";
+  gridi-gap: 10px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+main .box {
+  /*    width: 100%;
+    height: 100px;*/
+}
+
+main div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+main .header {
+  /*border: 2px solid black;*/
+  background-color: pink;
+  /*grid-area: 1 / 1 / 2 / span 2;*/
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  justify-items: center;
+}
+
+main .header .parent {
+  /*border: 2px solid black;*/
+  justify-items: center;
+  /*position: absolute;*/
+  font-size: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .header .parent .child {
+  opacity: 0.5;
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  /*border: 2px solid black;*/
+  position: relative;
+  font-size: 48px;
+  top: 22px;
+  right: 50px;
+  /*height: 5px;*/
+}
+
+main .payment {
+  background-color: lightgreen;
+  /*grid-area: 2 / 1 / 2 / 1;*/
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: payment;
+}
+
+main .special {
+  background-color: lightgrey;
+  /*grid-area: 3 / 1 / 3 / 2;*/
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: special;
+}
+
+main .shipping {
+  background-color: lightyellow;
+  /*grid-area: 2 / 2 / span 2 / span 1;*/
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: shipping;
+}
+
+main .image {
+  background-color: lightslategray;
+  /*grid-area: 4 / 1 / 4 / span 2;*/
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: image;
+}
+/*# sourceMappingURL=terms.css.map */

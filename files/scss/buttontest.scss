@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 10:01:37 AM
+    Author     : Norm
+*/
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+$menu-background-color: #dce6e8;
+@import "common";
+
+.spacer30 {
+    height: 30px;
+}
+.spacer20 {
+    height: 20px;
+}
+.spacer10 {
+    height: 10px;
+}
+
+@font-face {
+    font-family: "WizardsMagic";
+    src: url("../fonts/Wizards Magic.ttf");
+}
+
+@mixin wizard-font {
+    font-family: WizardsMagic;
+    font-size: 16;
+    font-weight: bold;
+}
+@mixin dancing-font {
+    font-family: "Dancing Script", cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+$font-size: 16px;
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    /*word-spacing: -5px;*/
+    /*letter-spacing: 20px;*/
+
+    .php-output {
+        color: red;
+        font-family: Arial;
+        font-size: 22px;
+    }
+
+    .text {
+        .large-text {
+            font-size: 62px;
+        }
+        .under-construction {
+            font-size: 16px;
+        }
+    }
+
+    .small-text {
+        font-size: 28px;
+        letter-spacing: 2px;
+        word-spacing: -10px;
+        font-weight: bold;
+    }
+    @include dancing-font;
+    /*  font-family: 'Allura', cursive;
+      font-family: 'Zeyada', cursive;*/
+
+    .products {
+        font-family: Arial, Helvetica, sans-serif;
+        $font-size: 24px;
+        display: flex;
+        justify-content: space-around;
+        .product {
+        }
+    }
+}

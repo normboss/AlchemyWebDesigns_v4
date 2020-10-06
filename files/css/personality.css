@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2018, 2:21:15 PM
+    Author     : Norm
+*/
+header {
+  color: blue;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header p {
+  font-size: 24px;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  /*  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;*/
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  /*  grid-template-areas:  "c1 t1"
+                        "c2 t2"
+                        "c3 t3"
+                        "c4 t4"
+                        "c5 t5"
+                        "c6 t6"
+                        "c7 t7"
+                        "c8 t8"
+                        "c9 t9";  */
+  grid-template-areas: "i1 i2 i3" "i4 i5 i6" "i7 i8 i9";
+  grid-row-gap: 5%;
+}
+
+main .box-id {
+  display: none;
+}
+
+main .t1, main .t2, main .t3, main .t4, main .t5, main .t6, main .t7, main .t8, main .t9 {
+  display: none;
+}
+
+main .box {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 24px;
+  /*border: 3px solid red;*/
+  padding: 2%;
+  /*background-color: lightgrey;*/
+}
+
+@media screen and (max-width: 500px) {
+  main .box img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  main .box img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  main .box img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+main .box .box {
+  /*border: 3px solid red;*/
+  background-color: lightblue;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 300px;
+  border-radius: 25px;
+}
+
+main .i1 {
+  grid-area: i1;
+  /*border: 3px solid red;*/
+}
+
+main .i1:hover .t1 {
+  display: inline;
+}
+
+main .i2 {
+  grid-area: i2;
+}
+
+main .i2:hover .t2 {
+  display: inline;
+}
+
+main .i3 {
+  grid-area: i3;
+}
+
+main .i3:hover .t3 {
+  display: inline;
+}
+
+main .i4 {
+  grid-area: i4;
+}
+
+main .i4:hover .t4 {
+  display: inline;
+}
+
+main .i5 {
+  grid-area: i5;
+}
+
+main .i5:hover .t5 {
+  display: inline;
+}
+
+main .i6 {
+  grid-area: i6;
+}
+
+main .i6:hover .t6 {
+  display: inline;
+}
+
+main .i7 {
+  grid-area: i7;
+}
+
+main .i7:hover .t7 {
+  display: inline;
+}
+
+main .i8 {
+  grid-area: i8;
+}
+
+main .i8:hover .t8 {
+  display: inline;
+}
+
+main .i9 {
+  grid-area: i9;
+}
+
+main .i9:hover .t9 {
+  display: inline;
+  left: 0;
+}
+/*# sourceMappingURL=personality.css.map */

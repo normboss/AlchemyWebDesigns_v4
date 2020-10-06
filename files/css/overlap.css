@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 6, 2018, 5:33:40 PM
+    Author     : Norm
+*/
+main {
+  display: grid;
+  grid-template: repeat(11, 1fr)/repeat(11, 1fr);
+}
+
+main .box {
+  width: 100%;
+  /*border: 3px solid red;*/
+}
+
+main .box img {
+  width: 100%;
+  height: 100%;
+}
+
+main .c1 {
+  grid-area: 1 / 1 / 11 / 11;
+  z-index: 1;
+}
+
+main .c2 {
+  grid-area: 2 / 2 / 10 / 10;
+  z-index: 2;
+}
+
+main .c3 {
+  grid-area: 3 / 3 / 9 / 9;
+  z-index: 3;
+}
+
+main .c4 {
+  grid-area: 4 / 4 / 8 / 8;
+  z-index: 4;
+}
+
+main .c5 {
+  grid-area: 5 / 5 / 7 / 7;
+  z-index: 5;
+}
+/*# sourceMappingURL=overlap.css.map */

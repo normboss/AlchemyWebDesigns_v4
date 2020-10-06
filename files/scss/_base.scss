@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+
+.spacer30 {
+    height: 30px;
+}
+.spacer20 {
+    height: 20px;
+}
+
+.spacer10 {
+    height: 10px;
+}
+
+@font-face {
+    font-family: "WizardsMagic";
+    src: url("../fonts/Wizards Magic.ttf");
+}
+
+@mixin wizard-font {
+    font-family: WizardsMagic;
+    font-size: 16;
+    font-weight: bold;
+}
+@mixin dancing-font {
+    font-family: "Dancing Script", cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}

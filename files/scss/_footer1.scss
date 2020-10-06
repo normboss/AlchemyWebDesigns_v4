@@ -1,0 +1,172 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2019, 12:31:28 AM
+    Author     : Norm
+*/
+
+#footer1 {
+    // outline: 3px solid red;
+    width: 100%;
+    max-width: 4000px; //1280px; //$max-page-width;
+    min-width: 250px;
+    height: 159px;
+    margin: 0 auto;
+    // display: flex;
+    justify-content: space-evenly;
+    // padding-top: 50px;
+    // padding-bottom: 80px;
+    background-color: #63899166;
+    position: relative;
+    margin-bottom: 5px;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+
+
+    .magic3 {
+        // outline: 3px solid red;
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        margin: 0 auto;
+        // position: absolute;
+        top: 0px; // 41px;
+        // left: 439px;
+        justify-self: center;
+
+        // width: 450px;
+        height: 39px;
+        text-align: center;
+        font: Italic 28px/39px Fondamento;
+        letter-spacing: 0px;
+        color: #000000;
+        // background-color: #63899166;
+        opacity: 1;
+        margin-top: 30px; //40px;
+        // margin-bottom: 20px;
+        @include max-mixin(500px) {
+            font-size: 22px;
+        }
+        @include max-mixin(350px) {
+            font-size: 18px;
+        }
+
+
+        .trademark3 {
+            // text-align: left;
+            // font: Regular 12px/18px Anton;
+            // // font-family: Arial, Helvetica, sans-serif;
+            font-family: "Anton", sans-serif;
+            font-size: 15px; //18px;
+            // // font-size: #{"clamp(12px, 1vw, 18px)"};
+            // // @include myclamp(12px, 1vw, 18px);
+            // font-size: 8px; //18px;
+            // letter-spacing: 0px;
+            // color: #fcf9f9;
+            // text-shadow: 0px 3px 4px #00000073;
+            // opacity: 1;
+
+            font: normal normal normal 10px/14px Anton;
+            letter-spacing: 0px;
+            color: #020202;
+            opacity: 1;
+            
+            @include max-mixin(500px) {
+                // font-size: px;
+            }
+            }
+    }
+
+
+    .footer-block {
+        // outline: 3px solid red;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        @include max-mixin(400px) {
+            font-size: 22px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .copyright {
+            // outline: 3px solid red;
+            // position: absolute;
+            top: 117px;
+            // left: 1041px;
+            right: 60px;
+            // width: 205px;
+            height: 15px;
+            text-align: left;
+            font: Bold 12px/15px Inria Sans;
+            letter-spacing: 0px;
+            color: #030303;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+
+        .contact-us {
+            // outline: 3px solid red;
+            // position: absolute;
+            top: 106px;
+            left: 83px;
+            // width: 70px;
+            height: 15px;
+            text-align: left;
+            font: Bold 12px/15px Inria Sans;
+            letter-spacing: 0px;
+            color: #030303;
+            text-transform: uppercase;
+            @include max-mixin(400px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .small-logo {
+            // border: 3px solid red;
+            margin: 0 auto;
+            margin-right: 0;
+            margin-left: 0;
+            width: auto;
+        }
+        .foot__text {
+            // border: 3px solid red;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            height: 30px;
+        }
+    }
+
+    .url-text {
+        // outline: 3px solid red;
+        // position: absolute;
+        top: 92px;
+        top: 0;
+        // left: 540px;
+        // width: 211px;
+        height: 17px;
+        text-align: center;
+        a {
+            font: Bold 14px/17px Inria Sans;
+            letter-spacing: 0px;
+            color: #030303;
+            text-transform: uppercase;
+            opacity: 1;
+            text-decoration: none;
+        }
+        // margin-top: 10px;
+    }
+}

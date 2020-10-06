@@ -1,0 +1,158 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2018, 2:21:15 PM
+    Author     : Norm
+*/
+
+header {
+  color: blue;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    font-size: 24px;
+  }
+}
+
+@mixin min-mixin($arg) {
+  @media screen and (min-width: $arg ) {
+    @content;
+  }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+  @media screen and (min-width: $arg1 ) and (max-width: $arg2) {
+    @content;
+  }
+}
+
+@mixin max-mixin($arg) {
+  @media screen and (max-width: $arg ) {
+    @content;
+  }
+}
+
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightgrey;
+/*  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;*/
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+ 
+/*  grid-template-areas:  "c1 t1"
+                        "c2 t2"
+                        "c3 t3"
+                        "c4 t4"
+                        "c5 t5"
+                        "c6 t6"
+                        "c7 t7"
+                        "c8 t8"
+                        "c9 t9";  */
+                        
+  grid-template-areas:  "i1 i2 i3"
+                        "i4 i5 i6"
+                        "i7 i8 i9";
+  grid-row-gap: 5%;
+  .box-id {
+    display: none;
+  }
+  .t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8, .t9 {
+    display: none;
+  }
+  
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 24px;
+    /*border: 3px solid red;*/
+    padding: 2%;
+    /*background-color: lightgrey;*/
+    img {
+      @include max-mixin(500px) {
+        width: 100px;
+        height: 100px;
+      }
+      @include min-max-mixin(501px, 700px) {
+        width: 125px;
+        height: 125px;
+      }
+      @include min-mixin(701px) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  
+  .box { 
+    .box {
+      /*border: 3px solid red;*/
+      background-color: lightblue;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      width: 300px;
+      border-radius: 25px;
+    }
+  }
+
+  .i1 { 
+    grid-area: i1; 
+    /*border: 3px solid red;*/
+  }
+  .i1:hover .t1 { 
+    display: inline; 
+  }
+  
+  .i2 { grid-area: i2; }
+  .i2:hover .t2 { 
+    display: inline; 
+  }
+  
+  .i3 { grid-area: i3; }
+  .i3:hover .t3 { 
+    display: inline; 
+  }
+  
+  .i4 { grid-area: i4; }
+  .i4:hover .t4 { 
+    display: inline; 
+  }
+  
+  .i5 { grid-area: i5; }
+  .i5:hover .t5 { 
+    display: inline; 
+  }
+  
+  .i6 { grid-area: i6; }
+  .i6:hover .t6 { 
+    display: inline; 
+  }
+  
+  .i7 { grid-area: i7; }
+  .i7:hover .t7 { 
+    display: inline; 
+  }
+  
+  .i8 { grid-area: i8; }
+  .i8:hover .t8 { 
+    display: inline; 
+  }
+  
+  .i9 { grid-area: i9; }
+  .i9:hover .t9 {
+    display: inline; 
+    left: 0;
+  }
+
+  
+}

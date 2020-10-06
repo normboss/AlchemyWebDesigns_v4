@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.navbar .subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar .subnav .subnavbtn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.navbar .subnav:hover .subnavbtn {
+  background-color: red;
+  cursor: pointer;
+}
+
+.navbar .home-decor-subnav .home-decor-subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar .home-decor-subnav .home-decor-subnavbtn:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.navbar .home-decor-subnav .home-decor-subnav-content {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.navbar .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .home-decor-subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar .subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.navbar .subnav:hover .subnav-content {
+  display: block;
+}
+
+.navbar .home-decor-subnav:hover .home-decor-subnav-content {
+  top: 100px;
+  display: block;
+  background-color: blue;
+}
+/*# sourceMappingURL=submenu1.css.map */

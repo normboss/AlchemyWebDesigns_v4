@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 10:01:37 AM
+    Author     : Norm
+*/
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+.spacer30 {
+  height: 30px;
+}
+
+.spacer20 {
+  height: 20px;
+}
+
+.spacer10 {
+  height: 10px;
+}
+
+@font-face {
+  font-family: "WizardsMagic";
+  src: url("../fonts/Wizards Magic.ttf");
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+  /*word-spacing: -5px;*/
+  /*letter-spacing: 20px;*/
+  font-family: "Dancing Script", cursive;
+  font-size: 64px;
+  font-weight: bold;
+  /*  font-family: 'Allura', cursive;
+      font-family: 'Zeyada', cursive;*/
+}
+
+main .php-output {
+  color: red;
+  font-family: Arial;
+  font-size: 22px;
+}
+
+main .text .large-text {
+  font-size: 62px;
+}
+
+main .text .under-construction {
+  font-size: 16px;
+}
+
+main .small-text {
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: -10px;
+  font-weight: bold;
+}
+
+main .images .forrest {
+  background-image: url("../images/Background.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main .images .forrest .box {
+  height: auto;
+  border: 2px solid red;
+  color: white;
+}
+
+main .images .forrest .box1 {
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 52px;
+  align-self: left;
+  padding-left: 5%;
+  text-align: left;
+  width: auto;
+  color: white;
+  height: 100px;
+}
+
+main .images .forrest .box1 .title {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 800;
+  font-size: 64px;
+  word-spacing: 10px;
+}
+
+main .images .forrest .box1 .sub-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+main .images .forrest .box2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  align-self: flex-end;
+  text-align: center;
+  color: black;
+  width: 80%;
+}
+
+main .images .forrest .box3 {
+  border: 3px solid red;
+  width: auto;
+  position: relative;
+  top: 430px;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+main .images .forrest .box3 .copy {
+  border: 3px solid blue;
+  text-align: left;
+  position: relative;
+  left: -25%;
+}
+/*# sourceMappingURL=indexOld.css.map */

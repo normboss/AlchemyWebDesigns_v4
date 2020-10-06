@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap');
+
+.magic {
+    // border: 3px solid red;
+    position: relative;
+    // font-size: 24px;
+    color: white;
+    // width: 95%;
+    margin: 0 auto;
+    padding-top: 25px;
+    
+    .magic__put {
+        // font-family: 'Oregano', cursive;
+        // animation: moveInBottom .5s ease-out .75s;
+        // animation-fill-mode: backwards;
+        background-color: #638991;
+    }
+    a.magic__contact {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-decoration: none;
+        animation: moveInBottom .5s ease-out 1.5s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.magic1 {
+    // border: 3px solid red;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font: Italic 48px/66px Fondamento;
+    font-size: 52px;
+    // padding-top: 50vh;
+    padding-top: 25px;
+
+    position: relative;
+    // top: -21px;
+    color: white;
+    // background-color: #638991;
+    text-align: center;
+    // font-size: #{"clamp(16px, 2.5vw, 50px)"};
+    $fontsize1: #{"max( max(calc(16px), calc(2.5vw)), min( calc(2.5vw), calc(50px) ) )"};
+    font-size: $fontsize1;
+    line-height: 1.5;
+
+    text-align: center;
+    font: Italic 28px/39px Fondamento;
+    letter-spacing: 0px;
+    color: #fafdfd;
+    opacity: 1;
+    // &:hover {
+    //     cursor: pointer;
+    //     background-color: pink;
+    //     transform: scale(1.5);
+    // }
+}

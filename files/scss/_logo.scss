@@ -1,0 +1,124 @@
+
+.logo {
+    // border: 3px solid blue;
+    opacity: 1;
+    font-weight: bold;
+    
+    &__title {
+        // position: absolute;
+        left: 25%;
+        font-family: "Major Mono Display", monospace;
+        color: #fff; //#93999a;
+        @include min-mixin(1300px) {
+            color: #fff;
+        }
+        font-weight: 800;
+        font-weight: bold;
+        font-size: 77px; // 64px;
+        word-spacing: 10px;
+        @include max-mixin(400px) {
+            font-size: 48px;
+        }
+        font-size: clamp(30, 48, 77);
+
+        // animation: moveInLeft 2s ease-in;
+        // transition: box-shadow 2s, transform 2s; /* CHANGED */
+    }
+    
+
+    &__sub-title {
+        // position: absolute;
+        left: 50%;
+        top: 35%;
+        color: #fff; //#93999a;
+        font-weight: 450;
+        @include min-mixin(1300px) {
+            color: #fff;
+            font-weight: 800;
+        }
+        font-family: $font-nothing;
+        // font-size: 48px; //36px;
+        letter-spacing: 6px;
+        @include max-mixin(400px) {
+            // font-size: 28px;
+        }
+        // animation: moveInRight 4s ease-in;
+    }
+    // text-shadow: 5px 5px 5px #93999a;
+    // text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    // text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.small-logo {
+    // border: 3px solid red;
+    position: relative;
+    top: -15px;
+    height: 50px;
+    background-color: #9da5b2;
+    color: white;
+    &__title {
+        font-family: "Major Mono Display", monospace;
+        font-weight: 800;
+        font-size: 32px;
+        word-spacing: 10px;
+        @include max-mixin(400px) {
+            font-size: 20px;
+        }
+    }
+
+    &__sub-title {
+        font-family: $font-nothing;
+        // font-family: 'Nothing You Could Do', cursive;
+        font-weight: 800;
+        font-size: 20px;
+        @include max-mixin(400px) {
+            // font-size: 28px;
+        }
+    }
+}
+
+.header-logo {
+    // outline: 3px solid red;
+    // @extend %menu-background;
+    color: black;
+    height: 45px;
+    padding-left: 15px;
+    position: relative;
+    left: -8px;
+    margin-right: 0;
+    background-color: #ccc; // white;
+    opacity: .8;
+    border-radius: 5px;
+    width: 330px;
+
+    @include max-mixin(750px) {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    &__title {
+        font-family: "Major Mono Display", monospace;
+        font-weight: 800;
+        font-size: 32px;
+        word-spacing: 10px;
+        @include max-mixin(750px) {
+            font-size: 20px;
+            text-align: left;
+        }
+        @include max-mixin(350px) {
+            font-size: 16px;
+            // text-align: left;
+        }
+    }
+
+    &__sub-title {
+        font-family: $font-nothing;
+        font-weight: 800;
+        font-size: 20px;
+        @include max-mixin(750px) {
+            font-size: 16px;
+        }
+        @include max-mixin(350px) {
+            font-size: 14px;
+        }
+    }
+}

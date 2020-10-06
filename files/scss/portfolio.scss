@@ -1,0 +1,499 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 10:01:37 AM
+    Author     : Norm
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap");
+
+@import "common";
+// @import "headerIndex";
+$menu-background-color: #e8eced;
+%menu-background {
+    background-image: linear-gradient(to right, #e8eced, #e8eced);
+}
+
+.spacer30 {
+    height: 30px;
+}
+.spacer20 {
+    height: 20px;
+}
+
+.spacer10 {
+    height: 10px;
+}
+
+@font-face {
+    font-family: "WizardsMagic";
+    src: url("../fonts/Wizards Magic.ttf");
+}
+
+@mixin wizard-font {
+    font-family: WizardsMagic;
+    font-size: 16;
+    font-weight: bold;
+}
+@mixin dancing-font {
+    font-family: "Dancing Script", cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+$font-size: 16px;
+$breakpt1: 850px;
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    /*word-spacing: -5px;*/
+    /*letter-spacing: 20px;*/
+    position: relative;
+    left: -8px;
+    // top: -8px;
+    width: 100%;
+    max-width: $max-page-width;
+    height: 100vh;
+    margin-top: 0;
+
+    .php-output {
+        color: red;
+        font-family: Arial;
+        font-size: 22px;
+    }
+
+    .text {
+        .large-text {
+            font-size: 62px;
+        }
+        .under-construction {
+            font-size: 16px;
+        }
+    }
+
+    .small-text {
+        font-size: 28px;
+        letter-spacing: 2px;
+        word-spacing: -10px;
+        font-weight: bold;
+    }
+    @include dancing-font;
+    /*  font-family: 'Allura', cursive;
+      font-family: 'Zeyada', cursive;*/
+
+    .portfolio {
+        // position: relative;
+        // left: -8px;
+        // top: -8px;
+
+        .logo1 {
+            // border: 3px solid red;
+            font-family: Arial, Helvetica, sans-serif;
+            // font-size: 48px;
+            width: 28%;
+            text-align: center;
+            // padding-left: 5%;
+            // text-align: center;
+            // width: auto;
+            color: white;
+            position: absolute;
+            top: 69px; //80px;
+            left: 83px; //65px;
+            @include max-mixin(500px) {
+                left: 30px;
+            }
+            display: flex;
+            flex-direction: column;
+    
+            --adj-factor: 0.8;
+            &__title1 {
+                // border: 3px solid red;
+                font-family: "Major Mono Display", monospace;
+                font-weight: 800;
+                font-size: 77px;
+                word-spacing: 10px;
+                // @include max-mixin(500px) {
+                //     font-size: 17vw;
+                // }
+                // font: Regular 77px/92px Major Mono Display;
+                // letter-spacing: -7.7px;
+                // color: #fcf9f9;
+                // text-shadow: 0px 8px 8px #00000040;
+    
+                text-align: left;
+                font: Regular 77px/92px Major Mono Display;
+                // font-size: #{'clamp(30px, 5vw, 77px)'};
+                // $fontsize1: #{"max( max(calc(30px*var(--adj-factor)), calc(5vw*var(--adj-factor))), min( calc(5vw*var(--adj-factor)), calc(77px*var(--adj-factor)) ) )"};
+                $fontsize1: #{"max( max(calc(30px), calc(3vw) ), min( calc(3vw), calc(50px) ) )"};
+                font-size: $fontsize1;
+    
+                // letter-spacing: -4px; //-7.7px;
+                letter-spacing: -0.5vw;
+                color: #fcf9f9;
+                // color: black;
+                text-shadow: 0px 8px 8px #00000040;
+                opacity: 1;
+            }
+    
+            &__sub-title1 {
+                // border: 3px solid red;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                letter-spacing: 1vw; //14px;
+    
+                // text-align: left;
+                font: Regular 18px/22px Inria Sans;
+                letter-spacing: 1.5vw; //18px;
+                color: #fcf9f9;
+                text-shadow: 0px 6px 8px #00000052;
+                text-transform: uppercase;
+                opacity: 1;
+                @include max-mixin(500px) {
+                    // font-size: 4vw;
+                    letter-spacing: 6px; //10px;
+                    margin: 0 auto;
+                    // padding-left: 30px;
+                }
+                $fontsize1: #{"max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) )"};
+                font-size: $fontsize1;
+                // font-size: 12px;
+                color: #fcf9f9;
+            }
+        }
+    
+        background-image: url("../images/hero_folio1.png");
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-position: bottom;
+        background-position-x: center;
+        background-position-x: left;
+        background-position-y: bottom;
+
+        .the-strip {
+            // border: 3px solid red;
+            // width: 100%;
+            // position: absolute;
+            display: flex;
+            padding-top: 200px;
+            padding-left: 20%;
+            justify-content: flex-start;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: auto;
+
+            @include max-mixin(820px) {
+                padding-left: 10%;
+            }
+            @include max-mixin(700px) {
+                flex-direction: column;
+                flex-direction: column-reverse;
+                justify-content: center;
+                padding-left: 0;
+                padding-top: 150px;
+                background-position-x: right;
+            }
+            @include max-mixin(450px) {
+                // width: 300px;
+                // padding-left: 20px;
+            }
+            @include max-mixin(350px) {
+                // width: 250px;
+                // padding-left: 10px;
+            }
+
+            .box {
+                // border: 3px solid red;
+                width: 350px;
+                height: auto;
+                // background-color: white;
+                // border: 2px solid red;
+                color: 93999a;
+                // margin-right: 10%;
+                @include max-mixin(450px) {
+                    // width: 300px;
+                    // padding-left: 50px;
+                    text-align: center;
+                }
+            }
+
+            // .box0 {
+            //     grid-column: 2 / span 2;
+            //     grid-row: 1 / span 1;
+            //     @import 'menu2';
+
+            // }
+
+            .box1 {
+                animation: moveInFromBottom 3s ease-out .5s;
+                animation-fill-mode: backwards;
+                    border-block: 2px solid rgba(112, 112, 112, 1);
+                background-color: rgba(75, 86, 99, 0.59);
+                // display: flex;
+                flex-direction: column;
+                color: white;
+                text-decoration: none;
+                // height: auto;
+                @include max-mixin($breakpt1) {
+                    justify-content: flex-start;
+                    margin: 0 auto;
+                    padding-left: 0;
+                    // width: 250px;
+                }
+                @include max-mixin(450px) {
+                    width: 300px;
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+                .box11 {
+                    // border: 3px solid blue;
+                    font-size: 32px;
+                    padding-top: 10px;
+                    padding-bottom: 6px;
+                }
+                .box12,
+                .box14,
+                .box16,
+                .box18,
+                .box-even {
+                    // border: 3px solid blue;
+                    img {
+                        width: 280px;
+                        // width: 80%;
+                        height: auto;
+                        text-decoration: none;
+                        margin: 0 auto;
+                        @include max-mixin($breakpt1) {
+                            justify-content: center;
+                            margin: 0 auto;
+                            padding-left: 0;
+                            // width: 220px;
+                        }
+                    }
+                    text-decoration: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .box13,
+                .box15,
+                .box17,
+                .box19,
+                .box-odd {
+                    // border: 3px solid blue;
+                    // height: 50px;
+                    font-size: 20px;
+                    color: white;
+                    padding: 10px;
+                    a {
+                        // justify-self: center;
+                        color: white;
+                    }
+                    text-decoration: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .box2 {
+                animation: moveInFromRight 3s ease-out .5s;
+                animation-fill-mode: backwards;
+                // border: 3px solid red;
+                // padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                height: auto;
+                // width: 350px;
+                // overflow: auto;
+                margin: 0 auto;
+                @include max-mixin($breakpt1) {
+                    // justify-content: center;
+                    // margin: 0 auto;
+                    // padding-left: 25px;
+                    // width: 350px;
+                    height: auto;
+                }
+                @include max-mixin(450px) {
+                    width: 300px;
+                    // padding-left: 5px;
+                    // margin-left: 25px;
+                    margin: 0 auto;
+                }
+                // @include max-mixin(325px) {
+                //     // width: 250px;
+                //     padding-left: 10px;
+                //     padding-left: 10px;
+                // }
+                .box20 {
+                    width: 350px;
+                    .logo {
+                        color: white;
+                    }
+                }
+                @include max-mixin(350px) {
+                    // width: 250px;
+                    // width: 80%;
+                    // padding-left: 10px;
+                    margin-left: 0px;
+                    width: 100%;
+                    padding-right: 20px;
+                }
+                .box21 {
+                    width: 80%;
+                    padding-top: 15px;
+                    // height: 50px;
+                    background-color: rgba(255, 255, 255, 0.59);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 32px;
+                    font-weight: normal;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    @include max-mixin($breakpt1) {
+                        background-color: rgba(255, 255, 255, 0.59);
+                        color: black; //white;
+                        font-weight: normal;
+                        text-align: center;
+                        margin: 0;
+                        // width: 350px;
+                        // padding-left: 20px;
+                        // padding-right: 15px;
+                    }
+                    @include max-mixin(700px) {
+                        width: 100%;
+                        //     width: 300px;
+                        //     padding-left: 10px;
+                        //     margin-left: 30px;
+                        //     padding-right: 10px;
+                    }
+                    @include max-mixin(350px) {
+                        //     // width: 250px;
+                        //     padding-left: 10px;
+                        //     margin: 0 auto;
+                        //     align-self: center;
+                        //     margin-right: 20px;
+                        // width: 100%;
+                    }
+                }
+                .box22 {
+                    // border: 3px solid red;
+                    // padding-top: 25px;
+                    // height: 280px;
+                    background-color: rgba(255, 255, 255, 0.59);
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-weight: normal;
+                    text-align: left;
+                    margin: 0 auto;
+                    width: 80%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    // overflow: auto;
+                    // @include max-mixin(800px) {
+                    //     overflow: auto;
+                    // }
+                    @include max-mixin($breakpt1) {
+                        background-color: rgba(255, 255, 255, 0.59);
+                        color: black; //white;
+                        font-weight: normal;
+                        // overflow: hidden;
+                        // padding-left: 20px;
+                        // width: 350px;
+                        height: auto;
+                        margin: 0;
+                    }
+                    @include max-mixin(700px) {
+                        width: 100%;
+                    }
+                    // @include max-mixin(450px) {
+                    //     width: 300px;
+                    //     padding-left: 10px;
+                    //     margin-left: 30px;
+                    // }
+
+                    @include max-mixin(350px) {
+                        //     // width: 250px;
+                        //     // padding-left: 10px;
+                        // width: 95%;
+                        // padding-left: 25px;
+                        // padding-right: 15px;
+                        // margin-left: 25px;
+                        padding-right: 20px;
+                    }
+
+                    .make-bold {
+                        font-weight: bold;
+                    }
+                    .wrought-iron {
+                        font-family: "IM Fell English SC", serif;
+                    }
+                    .village-weaver {
+                        font-family: "Italianno", cursive;
+                    }
+                }
+                .box23 {
+                }
+
+                .box23,
+                .box24 {
+                    font-weight: normal;
+                    width: 100%;
+                    @include max-mixin(900px) {
+                        width: 95%;
+                    }
+                    @include max-mixin(850px) {
+                        padding-left: 0;
+                    }
+                    // border: 3px solid red;
+                    // font-family: Arial, Helvetica, sans-serif;
+                    // color: white;
+                    // font-size: 24px;
+                    // font-weight: bold;
+                    // width: 400px;
+                    // margin: 0 auto;
+                    // padding-left: -50px;
+                    // position: relative;
+                    // left: -50px;
+                    // @include max-mixin(750px) {
+                    //     font-size: 20px;
+                    // }
+                    // @include max-mixin($breakpt1) {
+                    //     display: none;
+                    // }
+                }
+            }
+            .box3 {
+            }
+        }
+    }
+}

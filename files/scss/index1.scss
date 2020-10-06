@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 10:01:37 AM
+    Author     : Norm
+*/
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+$menu-background-color: #F6F8F9;
+@import 'common';
+// $menu-background-color: #DBE3F6;
+
+
+.spacer30 {
+    height: 30px;
+}
+.spacer20 {
+    height: 20px;
+}
+
+.spacer10 {
+    height: 10px;
+}
+
+@font-face {
+    font-family: "WizardsMagic";
+    src: url("../fonts/Wizards Magic.ttf");
+}
+
+@mixin wizard-font {
+    font-family: WizardsMagic;
+    font-size: 16;
+    font-weight: bold;
+}
+@mixin dancing-font {
+    font-family: "Dancing Script", cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+$font-size: 16px;
+
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    /*word-spacing: -5px;*/
+    /*letter-spacing: 20px;*/
+
+    .php-output {
+        color: red;
+        font-family: Arial;
+        font-size: 22px;
+    }
+
+    .text {
+        .large-text {
+            font-size: 62px;
+        }
+        .under-construction {
+            font-size: 16px;
+        }
+    }
+
+    .small-text {
+        font-size: 28px;
+        letter-spacing: 2px;
+        word-spacing: -10px;
+        font-weight: bold;
+    }
+    @include dancing-font;
+    /*  font-family: 'Allura', cursive;
+      font-family: 'Zeyada', cursive;*/
+
+    .images {
+        .forrest {
+            // sherman_lake.png
+            background-image: url("../images/fog_sherman_lake.png");
+            // background-image: url("../images/EnchantedForest.png");
+            // background-image: url("../images/Background.png");
+            // background-image: url("../images/Bass-Harbor-Head-light-fog.jpg");
+
+            width: 100%;
+            height: 90vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            // justify-items: center;
+            // grid-row-gap: 5%;
+
+            .box {
+                // border: 3px solid red;
+                width: 66%;
+                height: auto;
+                // background-color: white;
+                // border: 2px solid red;
+                color: 93999a;
+            }
+            // .box0 {
+            //     grid-column: 2 / span 2;
+            //     grid-row: 1 / span 1;
+            //     @import 'menu2';
+
+            // }
+            .box1 {
+                grid-column: 1 / span 3;
+                grid-row: 1 / span 1;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 48px;
+                align-self: center;
+                padding-left: 5%;
+                text-align: center;
+                width: auto;
+                color: white;
+                height: 100px;
+                @include max-mixin(750px) {
+                    text-align: center;
+                    width: 100%;
+                    justify-self: center;
+                }
+
+                .title {
+                    font-family: "Major Mono Display", monospace;
+                    font-weight: 800;
+                    font-size: 64px;
+                    word-spacing: 10px;
+                    @include max-mixin(400px) {
+                        font-size: 48px;
+                    }
+                }
+                .sub-title {
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 400;
+                    font-size: 32px;
+                    @include max-mixin(400px) {
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .box2 {
+                grid-column: 1 / span 3;
+                grid-row: 2 / span 1;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                align-self: flex-start;
+                justify-self: center;
+                // padding-right: 15%;
+                text-align: center;
+                color: #93999a;
+                width: 80%;
+            }
+            .box3 {
+                // border: 3px solid red;
+                grid-column: 2 / span 2;
+                grid-row: 4 / span 1;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 36px;
+                font-weight: normal;
+                justify-self: right;
+                color: white;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include max-mixin(400px) {
+                    grid-column: 1 / span 3;
+                }
+
+                .smaller {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

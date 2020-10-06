@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;EAIE;AACF;;;EAGE",
+    "sources": [
+        "../scss/kayaking.scss"
+    ],
+    "names": [],
+    "file": "kayaking.css"
+}
