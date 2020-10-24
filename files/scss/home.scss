@@ -90,6 +90,18 @@ $font-size: 16px;
     }
 }
 
+.header3 {
+    .nav3 {
+        .nav3__narrow {
+            ul {
+                .hamburger {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
 main {
     // border: 3px solid red;
     max-width: 4000px; //1280px; //$max-page-width;
@@ -125,9 +137,10 @@ main {
     // max-width: $max-page-width;
     height: 800px;
     height: 100vh;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
-    background-image: url("../images/hero_v4a.jpg");
+    // background-image: url("../images/hero_v4c.jpg");
+    background-image: url("../images/hero_v4_big_cropped.jpg");
     // background-image: url("../images/patrick-selin-5E-_orYLhs0-unsplash.jpg");
     // background-image: url("https://source.unsplash.com/1200x800/?magic");
     //
@@ -137,6 +150,9 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    // background-position-x: 25%;
+    // background-position-y: 100%;
+
     // display: grid;
     img {
         height: 100vh;
@@ -157,8 +173,9 @@ main {
         position: absolute;
         top: 69px; //80px;
         left: 83px; //65px;
+        left: 3%;
         @include max-mixin(500px) {
-            left: 30px;
+            // left: 30px;
         }
         display: flex;
         flex-direction: column;
@@ -171,12 +188,12 @@ main {
         // padding: 10px;
         // box-shadow: -10px 10px 18px #ffcccc;
         padding-bottom: 10px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 0px;
 
         &__title {
             // border: 3px solid red;
             font-family: "Major Mono Display", monospace;
-            text-shadow: 2px 2px;
+            // text-shadow: 2px 2px;
             font-weight: 800;
             font-size: 77px;
             word-spacing: 10px;
@@ -229,53 +246,71 @@ main {
             }
             $fontsize1: #{"max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) )"};
             font-size: $fontsize1;
-            // font-size: 12px;
-            // color: black;
-            // background-color: #ccc; // white;
-            // opacity: .5;
-            // border-radius: 5px;
-            // width: 450px;
+            padding-left: 10px;
+        }
+
+        @include max-height-mixin(600px) {
+            top: 10%;
         }
     }
 
     .magic1 {
-        // border: 3px solid red;
+        // outline: 3px solid red;
         width: 95%;
-        width: 100%;
+        // width: 100%;
         margin: 0 auto;
         font: Italic 48px/66px Fondamento;
         font-size: 52px;
         // padding-top: 50vh;
 
         position: absolute;
-        bottom: 50px;
-        bottom: 80px;
+        width: auto;
+        // width: 100%;
+        bottom: 90px;
+        // left: 35%; //400px;
+        // right: 25%;
+        // transform: translateX(50%);
+        // top: 25%;
         @include max-mixin(800px) {
-            bottom: 100px;
+            // bottom: 100px;
         }
 
-        color: white;
         text-align: right;
-        // font-size: #{"clamp(16px, 2.5vw, 50px)"};
-        // $fontsize1: #{"max( max(calc(16px), calc(2.5vw)), min( calc(2.5vw), calc(50px) ) )"};
-        // font-size: $fontsize1;
-        // line-height: 1.5;
 
-        font: italic normal normal 48px/66px Fondamento;
+        // padding-right: 135px;
+        // text-align: left;
+        font: italic normal normal 40px/66px Fondamento;
         letter-spacing: 0px;
         color: #fdfafa;
         text-shadow: 0px 6px 4px #00000026;
         opacity: 1;
-        padding-right: 135px;
-        @include max-mixin(900px) {
-            padding-right: 0;
-            text-align: center;
-            font-size: 40px;
+
+        right: 5%;
+        @include max-mixin(1600px) {
+            // right: 15%;
+        }
+        @include max-mixin(1200px) {
+            // right: 15%;
+        }
+        @include max-mixin(850px) {
+            font-size: 38px;
+        }
+        @include max-mixin(700px) {
+            // right: 0;
         }
         @include max-mixin(600px) {
-            font-size: 32px;
+            font-size: 30px;
+        }
+        @include max-mixin(500px) {
+            width: 100%;
+            right: 5%;
+            text-align: right;
+            line-height: normal;
         }
 
+        @include max-height-mixin(550px) {
+            bottom: 10%;
+        }
 
         .trademark {
             text-align: left;
@@ -288,7 +323,7 @@ main {
             letter-spacing: 0px;
             color: #fcf9f9;
             // color: red;
-            font-size: 18px;
+            font-size: 14px;
             text-shadow: 0px 3px 4px #00000073;
             opacity: 1;
         }
@@ -349,14 +384,14 @@ main {
         text-align: left;
         font: normal normal bold 14px/17px Inria Sans;
         letter-spacing: 0px;
-        color: #F9F9FC;
-        text-shadow: 0px 6px 8px #000000A8;
+        color: #f9f9fc;
+        text-shadow: 0px 6px 8px #000000a8;
         text-transform: uppercase;
         opacity: 1;
 
-        margin-left: 83px;
+        // margin-left: 83px;
         @include max-mixin(800px) {
-            margin-left: 25px;
+            // margin-left: 25px;
         }
         @include max-mixin(450px) {
             padding-left: 0;
@@ -371,6 +406,11 @@ main {
         }
         position: absolute;
         bottom: 23px;
+
+        @include max-height-mixin(600px) {
+            // display: none;
+        }
+        left: 3%;
     }
 
     .serving {
@@ -392,7 +432,6 @@ main {
         @include max-mixin(400px) {
             font-size: 3.5vw;
         }
-        
     }
 
     .box2 {

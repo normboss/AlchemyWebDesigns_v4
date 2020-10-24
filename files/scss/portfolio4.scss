@@ -79,6 +79,8 @@ $font-size: 16px;
 
 body {
     position: relative;
+    background-color: rgba(99, 137, 145, 0.3);
+
 }
 
 .header2 {
@@ -163,7 +165,7 @@ body {
 
 .header1 {
     // outline: 3px solid blue;
-    max-width: 4000px; //1280px;
+    // max-width: 1500px;
     width: 100%;
     height: 64px;
     margin: 0 auto;
@@ -173,9 +175,9 @@ body {
     z-index: 10;
 
     .logo1 {
+        // outline: 3px solid red;
         z-index: 10;
         min-width: 200px;
-        width: 200px;
     }
 
     @include max-mixin(900px) {
@@ -280,7 +282,7 @@ body {
 
     .logo1 {
         // outline: 3px solid red;
-        max-width: 4000px; //1280px;
+        // max-width: 4000px; //1280px;
         text-align: center;
         color: white;
         z-index: 5;
@@ -293,14 +295,14 @@ body {
         @include max-mixin(1000px) {
             // top: 20px;
             left: 10px;
-            top: 20px;
+            // top: 20px;
         }
 
         @include max-mixin(500px) {
-            top: 20px;
+            // top: 20px;
         }
         @include max-mixin(350px) {
-            top: 10px;
+            // top: 10px;
         }
         display: flex;
         flex-direction: column;
@@ -308,15 +310,27 @@ body {
         background-color: #638991;
         // color: black;
         opacity: 1;
-        width: 286px;
+        width: 15%;
+        height: 6vw;
+        min-width: 225px;
         @include max-mixin(1050px) {
-            width: 250px;
+            // width: 250px;
         }
-        height: 80px;
+        // height: 80px;
+        min-height: 80px;;
         background: #638991 0% 0% no-repeat padding-box;
         box-shadow: 0px 6px 8px #02000080;
         opacity: 1;
         padding-top: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include max-mixin(400px) {
+            min-width: 200px;
+            width: 1.5%;
+        }
+        width: 300px;
+
 
         &__title1 {
             // outline: 3px solid blue;
@@ -336,14 +350,17 @@ body {
 
             letter-spacing: -0.5vw;
             color: #fcf9f9;
-            width: 215px;
+            // min-width: 200px;
+            // width: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
             font-size: 47px;
             text-align: center;
             letter-spacing: -4.7px;
             color: #fcf9f9;
-            height: 47px;
+            // height: 47px;
             padding-top: 0;
-            @include max-mixin(350px) {
+            @include max-mixin(400px) {
                 font-size: 40px;
             }
         }
@@ -391,7 +408,7 @@ body {
 
 main {
     // outline: 3px solid red;
-    max-width: 4000px; //1280px; //$max-page-width;
+    max-width: 1280px; //$max-page-width;
     min-width: 280px;
     // height: 100vh;
     width: 100%;
@@ -430,7 +447,7 @@ main {
 
     .content {
         // outline: 3px solid red;
-        max-width: 4000px; //1280px;
+        max-width: 1280px;
         min-width: 280px;
         // position: relative;
         // top: -25px;
@@ -439,6 +456,7 @@ main {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 5px;
         @include max-mixin(900px) {
             display: flex;
             flex-direction: column;
@@ -469,9 +487,18 @@ main {
                 text-align: left;
                 font-family: "Libre Baskerville", serif;
                 line-height: normal;
-                line-height: 1.2;
+                // line-height: 1.2;
                 font-style: italic;
                 font-size: 20px;
+
+                // text-align: left;
+                font: italic normal bold 20px Merriweather;
+                // letter-spacing: 0.11px;
+                // color: rgba(252, 249, 249, 1);
+                text-shadow: 2px 5px 8px rgba(0, 0, 0, 1);
+                // text-shadow: 2px 5px 8px #888;
+                // opacity: 1;
+
                 // font-size: clamp(18px, 1vw, 22px);
                 @include max-mixin(1025px) {
                     font-size: 18px;
@@ -486,6 +513,7 @@ main {
                 color: #fcf9f9;
                 opacity: 1;
                 z-index: 5;
+
                 .author {
                     text-align: left;
                     font: Bold Italic 16px/22px Inria Sans;

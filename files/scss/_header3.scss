@@ -17,11 +17,14 @@ $text-color: #0a0a09;
 $text-color: red;
 
 .header3 {
+    // background-color: rgba(99, 137, 145, 0.5);
     * {
         box-sizing: border-box;
     }
-    // border: 3px solid red;
-    max-width: $max-page-width;
+    background-color: rgba(99, 137, 145, 0.3);
+
+    // outline: 3px solid red;
+    // max-width: $max-page-width;
     width: 100%;
     margin: 0 auto;
     position: relative; //fixed;
@@ -36,8 +39,8 @@ $text-color: red;
         position: relative;
 
         .nav3__wide {
-            // border: 3px solid red;
-            max-width: 1279px;
+            // outline: 3px solid red;
+            // max-width: 1279px;
             position: absolute;
             top: 25px;
             width: 100%;
@@ -49,7 +52,7 @@ $text-color: red;
             }
             ul {
                 // outline: 3px solid blue;
-                padding-right: 60px;
+                padding-right: 3%; //60px;
             }
 
             @include max-mixin(700px) {
@@ -75,7 +78,8 @@ $text-color: red;
                 font-family: "Inria Sans";
                 letter-spacing: 0px;
                 color: black;// #f9f9fc;
-                text-shadow: 0px 3px 4px #000000a8;
+                // text-shadow: 0px 3px 4px #000000a8;
+                
                 text-transform: uppercase;
                 opacity: 1;
                 padding-right: 12.5px;
@@ -87,14 +91,15 @@ $text-color: red;
             // border: 3px solid red;
             background-color: rgba(246, 248, 249, 0); //$menu-background-color;
             width: 70px;
-            left: 75%;
+            // left: 75%;
+            right: 5%;
             grid-area: menu-narrow;
             display: none;
             @extend %menu-style-narrow;
 
             position: absolute;
             right: 0px;
-            top: 20px;
+            top: 25px;
             @include max-mixin(700px) {
                 display: flex;
             }
@@ -138,7 +143,7 @@ $text-color: red;
 
             li a:hover,
             .dropdown:hover .dropbtn {
-                /*background-color: red;*/
+                // background-color: red;
                 text-decoration: underline;
             }
 
@@ -172,14 +177,15 @@ $text-color: red;
             }
 
             .dropdown:hover .dropdown-content {
-                display: block;
+                // display: block;
             }
+
         }
     }
 
 
     %menu-style-narrow {
-        // border: 3px solid red;
+        // outline: 3px solid red;
         z-index: 10;
         // padding-top: 5px;
         // top: -100px;
@@ -201,6 +207,7 @@ $text-color: red;
                 width: 35px;
                 height: 4px;
                 background-color: black;
+
                 margin: 6px 0;
             }
 
@@ -250,12 +257,14 @@ $text-color: red;
 
             /*.dropdown-content a:hover {background-color: #f1f1f1}*/
             .dropdown-content a:hover {
-                background-color: white;
+                background-color: pink;
                 /*text-decoration: underline;*/
             }
 
             .dropdown:hover .dropdown-content {
                 display: block;
+                // background-color: pink;
+                right: 10%;
             }
         }
     }

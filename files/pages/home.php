@@ -16,7 +16,6 @@ and open the template in the editor.
 <head>
     <?php
     require '../includes/globalSiteTag.html';
-    require '../includes/keywords.php';
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +25,8 @@ and open the template in the editor.
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
     <!--<link rel="icon" href="./images/Image7.gif">-->
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png"> -->
+    <link rel="icon" href="../images/favicon.ico">
 
 </head>
 
@@ -47,9 +47,9 @@ and open the template in the editor.
             <!-- <img src="https://source.unsplash.com/1200x800/?magic" alt=""> -->
         </div>
 
-        <!-- <?php
-                // require '../includes/logo.php';
-                ?> -->
+        <?php
+        // require '../includes/logo-a.php';
+        ?>
 
 
         <div class="logo">
@@ -61,7 +61,7 @@ and open the template in the editor.
         ?>
 
         <div class="magic1">
-            Put the magic of the web to work.<span class="trademark">&trade;</span>
+            Put the magic of the web&nbsp;to&nbsp;work.<span class="trademark">&trade;</span>
         </div>
 
         <div class="serving1">
@@ -71,13 +71,13 @@ and open the template in the editor.
     </main>
 
     <?php
-    require '../includes/footer1.php'
+    require '../includes/footer2.php'
     ?>
 
-    <div id="ufo-block">
-        <!-- <img id="ufo" class="ufo" src="../images/night.svg" style="width:'20px';"> -->
-        <!-- <img id="ufo" class="ufo" src="../images/flyingsaucer.svg" style="width:'80px';"> -->
-    </div>
+    <!-- <div id="ufo-block"> -->
+    <!-- <img id="ufo" class="ufo" src="../images/night.svg" style="width:'20px';"> -->
+    <!-- <img id="ufo" class="ufo" src="../images/flyingsaucer.svg" style="width:'80px';"> -->
+    <!-- </div> -->
 
 
 

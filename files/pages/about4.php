@@ -17,9 +17,9 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/about4.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/about4a.css" media="screen" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png"> -->
 
 </head>
 
@@ -31,17 +31,9 @@ and open the template in the editor.
 
     <main>
 
-        <!-- <?php
-                // require '../includes/logo.php';
-                ?> -->
-
-
-        <div class="logo1">
-            <span class="logo1__title1">AlchemY</span><span class="logo1__sub-title1"> WEB&nbsp;DESIGNS</span>
-        </div>
-
-        <!-- <div class="row1"></div> -->
-
+        <?php
+        require '../includes/logo_a.php';
+        ?>
 
         <div class="content">
             <ul class="upper-content">
@@ -84,12 +76,12 @@ and open the template in the editor.
                 </div>
             </div>
             <div id="member3" class="staff-member">
-                <img class="picture" src="../images/Ann.png"></img>
+                <img class="picture" src="../images/AnnAtYorkBeachSm.png"></img>
                 <div class="text">
                     <h2>Ann Bosse</h2>
-                    <p>With over 30 years of experience as an art director &
-                        designer, Ann has a wealth of knowledge in the advertising
-                        field including design, copy and production.</p>
+                    <p>With over 30 years of experience as an art director
+                        &&nbsp;designer, Ann has a wealth of knowledge in advertising
+                        - including design, copy and production.</p>
                 </div>
             </div>
             <br><br><br>

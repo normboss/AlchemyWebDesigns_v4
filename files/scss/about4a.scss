@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 29, 2018, 10:01:37 AM
+    Author     : Norm
+*/
+
+@import "common";
+// $menu-background-color: #DBE3F6;
+@import "header3";
+
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fondamento:ital@0;1&display=swap");
+$menu-background-color: #f6f8f9;
+$menu-background-color1: red; // #F6F8F9;
+$menu-background-color2: blue; // #F6F8F9;
+%menu-background {
+    background-image: linear-gradient(to right, $menu-background-color1, $menu-background-color1);
+}
+
+.spacer30 {
+    height: 30px;
+}
+.spacer20 {
+    height: 20px;
+}
+
+.spacer10 {
+    height: 10px;
+}
+
+@font-face {
+    font-family: "WizardsMagic";
+    src: url("../fonts/Wizards Magic.ttf");
+}
+
+@mixin wizard-font {
+    font-family: WizardsMagic;
+    font-size: 16;
+    font-weight: bold;
+}
+@mixin dancing-font {
+    font-family: "Dancing Script", cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+$font-size: 16px;
+
+#ufo-block {
+    width: 1%;
+    position: fixed;
+    img {
+        width: 100%;
+        position: fixed;
+    }
+}
+
+body {
+    max-width: 3280px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.logo-a {
+    // outline: 3px solid red;
+    top: -20px;
+    // left: 15px;
+
+    // display: flex;
+    // flex-direction: column;
+    // background-color: #638991;
+    // // color: black;
+    // opacity: 1;
+    // width: 286px;
+    // height: 80px;
+    // background: #638991 0% 0% no-repeat padding-box;
+    // box-shadow: 0px 6px 8px #02000080;
+    // opacity: 1;
+    // @include max-mixin(500px) {
+    //     // left: 30px;
+    //     width: 225px;            
+    // }
+
+}
+
+main {
+    // border: 3px solid blue;
+    max-width: 3280px; //$max-page-width;
+    min-width: 250px;
+    width: 100%;
+    // height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    padding-left: 1%;
+
+    position: relative;
+    background-image: url("../images/about-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include max-mixin(400px) {
+        // height: 3000px;
+    }
+
+    display: block;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    // padding-bottom: 70px;
+
+    .content {
+        // outline: 3px solid blue;
+        width: 95%;
+        width: 100%;
+        // height: 40vh;
+        grid-column: 2 / span 6;
+        grid-row: 3 / span 1;
+        // position: relative;
+        top: -10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        min-width: 250px;
+        width: 100%;
+        @include max-mixin(400px) {
+            padding-bottom: 0;
+        }
+
+        .upper-content {
+            // outline: 3px solid red;
+            text-align: left;
+            // font: Bold Italic 33px/46px Merriweather;
+            letter-spacing: 0px;
+            // line-height: 46px;
+            color: #26454b;
+            opacity: 1;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 33px;
+            // font-size: clamp(24px, 3vw, 33px);
+            margin-bottom: 8px;
+            min-width: 200px;
+            width: 95%;
+            // padding-left: 15px;
+            // padding-right: 15px;
+            @include max-mixin(500px) {
+                font-size: 24px;
+            }
+        }
+
+        .lower-content {
+            // outline: 3px solid red;
+            font-family: "Merriweather", serif;
+            font-weight: 300;
+            text-align: left;
+            // font: Light 22px/36px Merriweather;
+            font-size: 22px;
+            line-height: 36px;
+            font-size: clamp(18px, 2vw, 22px);
+            line-height: 150%; //3vw; // clamp(20px 2vw, 36px);
+            letter-spacing: 0px;
+            padding-left: 15px;
+            color: #000000;
+            width: 95%;
+            // margin: 0 auto;
+        }
+    }
+
+    .the-staff {
+        // outline: 3px solid green;
+        width: 100%;
+        // height: auto;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .staff-member {
+            // outline: 3px solid red;
+            display: flex;
+            @include max-mixin(1150px) {
+                flex-direction: column;
+            }
+            // @include max-mixin(400px) {
+            //     display: block;
+            // }
+
+            .picture {
+                width: 150px;
+                height: 150px;
+                // margin: 0 auto;
+            }
+            .text {
+                // outline: 3px solid red;
+                // width: 231px;
+                // height: 213px;
+                // padding-left: 10px;
+                margin-left: 10px;
+                width: 100%;
+
+                h2 {
+                    text-align: left;
+                    @include max-mixin(600px) {
+                        text-align: center;
+                    }
+                    // font: Italic 30px/50px Merriweather;
+                    font-family: "Merriweather", serif;
+                    font-size: 30px;
+                    font-style: italic;
+                    letter-spacing: 0px;
+                    color: #26454b;
+                    opacity: 1;
+                }
+                p {
+                    // outline: 3px solid red;
+                    text-align: left;
+                    font: Light 19px/27px Merriweather;
+                    font-family: "Merriweather", serif;
+                    font-weight: 300;
+                    font-size: 19px;
+                    font-size: clamp(16px, 2vw, 20px);
+                    letter-spacing: 0px;
+                    color: #26454b;
+                    opacity: 1;
+                    // padding-right: 20px;
+                    // padding-left: 10px;
+                    // margin-right: 20px;
+                    width: 90%;
+                    // overflow-wrap: break-word;
+                    // word-break: break-all;
+
+                    @include max-mixin(750px) {
+                        // width: 85%;
+                        // padding-right: 25px;
+                    }
+        
+                }
+            }
+        }
+        @include max-mixin(600px) {
+            // height: 550px;
+            flex-direction: column;
+            #member1,
+            #member2,
+            #member3 {
+                flex-direction: row;
+                height: auto;
+                .text p {
+                    height: 100%;
+                    // display: none;
+                }
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        @include max-mixin(400px) {
+            #member1,
+            #member2,
+            #member3 {
+                z-index: 5;
+                // height: 4000px;
+                // margin-bottom: 100px;
+                flex-direction: column;
+                position: static;
+                .picture {
+                    margin: 0 auto;
+                }
+                // height: auto;
+                .text p {
+                    // display: none;
+                }
+            }
+        }
+
+        #member3 {
+            .picture {
+                border-radius: 50%;
+            }
+        }
+    }
+
+
+}
+
+.magic2 {
+    // border: 3px solid red;
+    // width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    font: Italic 48px/66px Fondamento;
+    font-size: 52px;
+    padding-top: 20px;
+    // margin-top: 25px;
+
+    //position: relative;
+    position: static;
+    // bottom: 20vh;
+
+    color: white;
+    text-align: center;
+    // font-size: #{"clamp(16px, 2.5vw, 50px)"};
+    $fontsize1: #{"max( max(calc(16px), calc(2.5vw)), min( calc(2.5vw), calc(50px) ) )"};
+    font-size: $fontsize1;
+    line-height: 1.5;
+    background-color: #454f52;
+}
+
+.foot {
+    width: 100%;
+}
+
+.about-footer {
+    width: 100%;
+    position: static;
+    bottom: 0px;
+}
+
+// img {
+//     width: 50px;
+// }

@@ -20,19 +20,18 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/portfolio4.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/portfolio4a.css" media="screen" rel="stylesheet" type="text/css">
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
     <!--<link rel="icon" href="./images/Image7.gif">-->
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png"> -->
 
 </head>
 
 <body>
 
     <?php
-    // require '../includes/headerIndex.php';
     require '../includes/header3.php';
     ?>
 
@@ -40,42 +39,11 @@ and open the template in the editor.
         <img id="ufo" class="ufo" src="../images/flyingsaucer.svg" style="width:'40px';">
     </div> -->
 
-    <div class="header1">
 
-        <div class="logo1">
-            <span class="logo1__title1">AlchemY</span><span class="logo1__sub-title1"> WEB&nbsp;DESIGNS</span>
-        </div>
-
-
-        <!-- <div class="nav">
-            <div class="nav__wide">
-                <ul>
-                    <li class="menu-item">serving midcoast maine - and beyond!</li>
-                    <li class="menu-item"><a href="home.php">Home</a></li>
-                    <li class="menu-item"><a href="portfolio3.php">Portfolio</a></li>
-                    <li class="menu-item"><a href="about3.php">About</a></li>
-                    <li class="menu-item"><a href="contact.php" target="_blank">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__narrow">
-                <div class="menu-item">serving midcoast maine - and beyond!</div>
-                <ul>
-                    <a href="javascript:void(0)" class="dropbtn">
-                        <div class="hamburger"></div>
-                        <div class="hamburger"></div>
-                        <div class="hamburger"></div>
-                    </a>
-                </ul>
-
-            </div>
-        </div> -->
-
-    </div>
     <?php
-    // require '../includes/headerIndex.php';
-    // require '../includes/header1.php';
+    require '../includes/logo_a.php';
     ?>
+
 
     <main>
         <div id="hero-block">
@@ -91,17 +59,20 @@ and open the template in the editor.
         <!-- <div class="row1"></div> -->
         <div class="content">
 
-            <div id="client1" class="client" onclick="wroughtIronLink()">
-                <img src="../images/andy_ladder2.png" alt="" title="www.ScottishWroughtIron.com">
-                <div class="copy">
-                    &ldquo;Alchemy receives a 5-star<br>
-                    rating for their creative<br>
-                    redesign of my old site<br>
-                    and for increasing<br>
-                    my sales!&rdquo;<br>
-                    <div class="author">Andy, Owner<br> Scottish Wrought Iron</div>
+            <div id="client1">
+                <div class="client" onclick="wroughtIronLink()">
+                    <img src="../images/andy_ladder2.png" alt="" title="www.ScottishWroughtIron.com">
+                    <div class="copy">
+                        &ldquo;Alchemy receives a 5-star<br>
+                        rating for their creative<br>
+                        redesign of my old site<br>
+                        and for increasing<br>
+                        my sales!&rdquo;<br>
+                        <div class="author">Andy, Owner<br> Scottish Wrought Iron</div>
+                    </div>
                 </div>
             </div>
+
             <div id="copy1" class="client-copy">
                 <!-- &ldquo;My sales increased exponentially with the new website.&rdquo;<br> -->
 
@@ -127,7 +98,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div id="copy1" class="client-copy">
-                &ldquo;Great to work with, and eager to support my business as I 
+                &ldquo;Great to work with, and eager to support my business as I
                 expand reaching new heights with their support.&rdquo;
                 <div class="author">Sarah, Owner A Slice of Country</div>
             </div>
@@ -154,11 +125,11 @@ and open the template in the editor.
             </div>
 
             <div id="client4" class="client" onclick="maineVillageWeaver()">
-                <img src="../images/PhyllisSmiling.png" alt="" title="www.MaineVillageWeaver.com">
+                <img src="../images/PhyllisSmiling1.png" alt="" title="www.MaineVillageWeaver.com">
                 <div class="copy">
                     &ldquo;Weaving is my passion.<br>
                     It’s wonderful to share it<br>
-                     with so many folks on my<br>
+                    with so many folks on my<br>
                     new website.&rdquo;
                     <div class="author">Phyllis, Owner<br> Maine Village Weaver</div>
                 </div>
@@ -180,9 +151,9 @@ and open the template in the editor.
     require '../includes/footer1.php'
     ?>
 
-    <div id="ufo-block">
+    <!-- <div id="ufo-block">
         <img id="ufo" class="ufo" src="../images/flyingsaucer.svg" style="width:'80px';">
-    </div>
+    </div> -->
 
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -233,7 +204,7 @@ and open the template in the editor.
         //     var scale = Math.random() * 5;
         //     // y = (y % dy/2);
         //     // console.log("x=" + x + " y=" + y);
-            
+
         //     gsap.to("#ufo-block", 2, {
         //         x: x,
         //         y: y,

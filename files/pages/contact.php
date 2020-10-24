@@ -47,37 +47,25 @@ and open the template in the editor.
 <body>
 
     <?php
-    //  require '../includes/menu2.php'; 
     require '../includes/header3.php';
     ?>
     <main>
-<!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque libero nesciunt molestias. Ipsum, impedit cupiditate? Atque sapiente quia quo, nostrum eaque et distinctio repellendus quae ipsa est repudiandae assumenda, adipisci eligendi, reprehenderit rerum commodi maxime temporibus placeat. Ullam ipsam, aliquam assumenda odio perspiciatis eveniet inventore minus dolore eius totam earum. 
+        <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque libero nesciunt molestias. Ipsum, impedit cupiditate? Atque sapiente quia quo, nostrum eaque et distinctio repellendus quae ipsa est repudiandae assumenda, adipisci eligendi, reprehenderit rerum commodi maxime temporibus placeat. Ullam ipsam, aliquam assumenda odio perspiciatis eveniet inventore minus dolore eius totam earum. 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt saepe assumenda nostrum et in numquam ad impedit quisquam dolore eligendi, dolores adipisci, blanditiis maiores ipsa dicta eum laborum eius veniam excepturi fugiat possimus sed minima debitis. Pariatur, et! Fugiat dolorem laboriosam iusto praesentium nostrum consequatur aspernatur incidunt. Aut, dolorum quis deserunt non quasi consequuntur labore ut saepe nemo. Tempore magni eligendi, rerum est beatae, quas ratione ut numquam exercitationem ea illo! In saepe, molestias velit qui veritatis quam architecto voluptatem animi voluptatum temporibus ratione consequuntur quidem sequi dolore. Sed libero molestias dolores cum ab facilis corrupti odit veritatis perspiciatis.
 -->
 
 
         <div class="header1">
-
-            <div class="logo1">
-                <span class="logo1__title1">AlchemY</span><span class="logo1__sub-title1"> WEB&nbsp;DESIGNS</span>
-            </div>
+            <?php
+            require '../includes/logo_a.php';
+            ?>
         </div>
 
         <div class="contact-container">
-            <!-- <br> -->
-            <div class="magic-block">
-                <?php
-                // require '../includes/magic.php';
-                ?>
-                <!-- <div class="magic1">
-                    Put the magic of the web to work.<span class="trademark">&trade;</span>
-                </div> -->
-
-            </div>
 
             <div class="copy-block">
-            We’d love to hear from you! Let’s talk about what you’re looking 
-            for in a website, and how we can help you maximize your message - and your business.
+                We’d love to hear from you! Let’s talk about what you’re looking
+                for in a website, and how we can help you maximize your message - and your business.
             </div>
 
             <div class="form-container">

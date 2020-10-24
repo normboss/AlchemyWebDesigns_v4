@@ -435,6 +435,96 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+.logo-a {
+  text-align: center;
+  color: white;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+  position: relative;
+  top: -20px;
+  left: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #638991;
+  opacity: 1;
+  width: 286px;
+  height: 80px;
+  background: #638991 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 8px #02000080;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a {
+    width: 225px;
+  }
+}
+
+.logo-a__title {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 800;
+  font-size: 77px;
+  word-spacing: 10px;
+  color: #fcf9f9;
+  text-align: left;
+  --s-font: 30px;
+  --m-font: 5vw;
+  --l-font: 47px;
+  font-size: max( max(calc(var(--s-font)), calc(var(--m-font))), min( calc(var(--m-font)), calc(var(--l-font)) ) );
+  letter-spacing: -0.5vw;
+  color: #fcf9f9;
+  width: 286px;
+  font-size: 47px;
+  text-align: center;
+  letter-spacing: -4.7px;
+  color: #fcf9f9;
+  height: 47px;
+  padding-top: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a__title {
+    font-size: 38px;
+  }
+}
+
+.logo-a__sub-title {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1vw;
+  font: Regular 18px/22px Inria Sans;
+  font-family: "inrai Sans";
+  letter-spacing: 1.5vw;
+  color: #fcf9f9;
+  text-transform: uppercase;
+  opacity: 1;
+  text-align: left;
+  font: Regular 10px/12px Inria Sans;
+  font-family: "Inria Sans", sans-serif;
+  letter-spacing: 10px;
+  color: #fcf9f9;
+  text-shadow: 0px 6px 8px #00000052;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) );
+  font-family: "Inria Sans", sans-serif;
+  text-align: center;
+  font-size: 10px;
+  top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a__sub-title {
+    letter-spacing: 6px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -585,7 +675,7 @@ and open the template in the editor.
 .header {
   outline: 3px solid green;
   width: 100%;
-  max-width: 1300px;
+  max-width: 4300px;
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);
@@ -872,7 +962,7 @@ and open the template in the editor.
     Author     : Norm
 */
 .header3 {
-  max-width: 1280px;
+  background-color: rgba(99, 137, 145, 0.3);
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -892,7 +982,6 @@ and open the template in the editor.
 }
 
 .header3 .nav3 .nav3__wide {
-  max-width: 1279px;
   position: absolute;
   top: 25px;
   width: 100%;
@@ -908,7 +997,7 @@ and open the template in the editor.
 }
 
 .header3 .nav3 .nav3__wide ul {
-  padding-right: 60px;
+  padding-right: 3%;
 }
 
 @media screen and (max-width: 700px) {
@@ -939,7 +1028,6 @@ and open the template in the editor.
   font-family: "Inria Sans";
   letter-spacing: 0px;
   color: black;
-  text-shadow: 0px 3px 4px #000000a8;
   text-transform: uppercase;
   opacity: 1;
   padding-right: 12.5px;
@@ -948,12 +1036,12 @@ and open the template in the editor.
 .header3 .nav3 .nav3__narrow {
   background-color: rgba(246, 248, 249, 0);
   width: 70px;
-  left: 75%;
+  right: 5%;
   grid-area: menu-narrow;
   display: none;
   position: absolute;
   right: 0px;
-  top: 20px;
+  top: 25px;
 }
 
 @media screen and (max-width: 700px) {
@@ -998,7 +1086,6 @@ and open the template in the editor.
 .header3 .header .nav .nav__wide ul li a:hover, .header .nav .header3 .nav__wide ul li a:hover,
 .header3 .header .nav .nav__wide ul .dropdown:hover .dropbtn,
 .header .nav .header3 .nav__wide ul .dropdown:hover .dropbtn {
-  /*background-color: red;*/
   text-decoration: underline;
 }
 
@@ -1028,10 +1115,6 @@ and open the template in the editor.
 .header3 .header .nav .nav__wide ul .dropdown-content a:hover, .header .nav .header3 .nav__wide ul .dropdown-content a:hover {
   background-color: white;
   /*text-decoration: underline;*/
-}
-
-.header3 .header .nav .nav__wide ul .dropdown:hover .dropdown-content, .header .nav .header3 .nav__wide ul .dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .header3 .nav3 .nav3__narrow {
@@ -1101,12 +1184,13 @@ and open the template in the editor.
 }
 
 .header3 .nav3 .nav3__narrow ul .dropdown-content a:hover {
-  background-color: white;
+  background-color: pink;
   /*text-decoration: underline;*/
 }
 
 .header3 .nav3 .nav3__narrow ul .dropdown:hover .dropdown-content {
   display: block;
+  right: 10%;
 }
 
 body {
@@ -1144,6 +1228,10 @@ body {
   color: #f9f9fc;
 }
 
+.header3 .nav3 .nav3__narrow ul .hamburger {
+  background-color: white;
+}
+
 main {
   max-width: 4000px;
   width: 100%;
@@ -1157,9 +1245,9 @@ main {
   position: relative;
   height: 800px;
   height: 100vh;
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
-  background-image: url("../images/hero_v4a.jpg");
+  background-image: url("../images/hero_v4_big_cropped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1198,23 +1286,17 @@ main .logo {
   position: absolute;
   top: 69px;
   left: 83px;
+  left: 3%;
   display: flex;
   flex-direction: column;
   opacity: 1;
   border-radius: 8px;
   padding-bottom: 10px;
-  padding: 10px 10px 10px 10px;
-}
-
-@media screen and (max-width: 500px) {
-  main .logo {
-    left: 30px;
-  }
+  padding: 10px 10px 10px 0px;
 }
 
 main .logo__title {
   font-family: "Major Mono Display", monospace;
-  text-shadow: 2px 2px;
   font-weight: 800;
   font-size: 77px;
   word-spacing: 10px;
@@ -1241,6 +1323,7 @@ main .logo__sub-title {
   text-transform: uppercase;
   opacity: 1;
   font-size: max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) );
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -1250,42 +1333,53 @@ main .logo__sub-title {
   }
 }
 
+@media screen and (max-height: 600px) {
+  main .logo {
+    top: 10%;
+  }
+}
+
 main .magic1 {
   width: 95%;
-  width: 100%;
   margin: 0 auto;
   font: Italic 48px/66px Fondamento;
   font-size: 52px;
   position: absolute;
-  bottom: 50px;
-  bottom: 80px;
-  color: white;
+  width: auto;
+  bottom: 90px;
   text-align: right;
-  font: italic normal normal 48px/66px Fondamento;
+  font: italic normal normal 40px/66px Fondamento;
   letter-spacing: 0px;
   color: #fdfafa;
   text-shadow: 0px 6px 4px #00000026;
   opacity: 1;
-  padding-right: 135px;
+  right: 5%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   main .magic1 {
-    bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  main .magic1 {
-    padding-right: 0;
-    text-align: center;
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 
 @media screen and (max-width: 600px) {
   main .magic1 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .magic1 {
+    width: 100%;
+    right: 5%;
+    text-align: right;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  main .magic1 {
+    bottom: 10%;
   }
 }
 
@@ -1296,7 +1390,7 @@ main .magic1 .trademark {
   font-size: 18px;
   letter-spacing: 0px;
   color: #fcf9f9;
-  font-size: 18px;
+  font-size: 14px;
   text-shadow: 0px 3px 4px #00000073;
   opacity: 1;
 }
@@ -1330,19 +1424,13 @@ main .serving1 {
   text-align: left;
   font: normal normal bold 14px/17px Inria Sans;
   letter-spacing: 0px;
-  color: #F9F9FC;
-  text-shadow: 0px 6px 8px #000000A8;
+  color: #f9f9fc;
+  text-shadow: 0px 6px 8px #000000a8;
   text-transform: uppercase;
   opacity: 1;
-  margin-left: 83px;
   position: absolute;
   bottom: 23px;
-}
-
-@media screen and (max-width: 800px) {
-  main .serving1 {
-    margin-left: 25px;
-  }
+  left: 3%;
 }
 
 @media screen and (max-width: 450px) {

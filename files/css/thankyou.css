@@ -434,6 +434,96 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+.logo-a {
+  text-align: center;
+  color: white;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+  position: relative;
+  top: -20px;
+  left: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #638991;
+  opacity: 1;
+  width: 286px;
+  height: 80px;
+  background: #638991 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 8px #02000080;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a {
+    width: 225px;
+  }
+}
+
+.logo-a__title {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 800;
+  font-size: 77px;
+  word-spacing: 10px;
+  color: #fcf9f9;
+  text-align: left;
+  --s-font: 30px;
+  --m-font: 5vw;
+  --l-font: 47px;
+  font-size: max( max(calc(var(--s-font)), calc(var(--m-font))), min( calc(var(--m-font)), calc(var(--l-font)) ) );
+  letter-spacing: -0.5vw;
+  color: #fcf9f9;
+  width: 286px;
+  font-size: 47px;
+  text-align: center;
+  letter-spacing: -4.7px;
+  color: #fcf9f9;
+  height: 47px;
+  padding-top: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a__title {
+    font-size: 38px;
+  }
+}
+
+.logo-a__sub-title {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1vw;
+  font: Regular 18px/22px Inria Sans;
+  font-family: "inrai Sans";
+  letter-spacing: 1.5vw;
+  color: #fcf9f9;
+  text-transform: uppercase;
+  opacity: 1;
+  text-align: left;
+  font: Regular 10px/12px Inria Sans;
+  font-family: "Inria Sans", sans-serif;
+  letter-spacing: 10px;
+  color: #fcf9f9;
+  text-shadow: 0px 6px 8px #00000052;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) );
+  font-family: "Inria Sans", sans-serif;
+  text-align: center;
+  font-size: 10px;
+  top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-a__sub-title {
+    letter-spacing: 6px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -584,7 +674,7 @@ and open the template in the editor.
 .header {
   outline: 3px solid green;
   width: 100%;
-  max-width: 1300px;
+  max-width: 4300px;
   margin: 0 auto;
   position: absolute;
   transform: translateX(-50%);

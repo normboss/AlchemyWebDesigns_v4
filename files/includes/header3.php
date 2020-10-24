@@ -10,7 +10,8 @@
                     <span class="menu-item"><a href="home.php">Home</a></span>
                     <span class="menu-item"><a href="portfolio4.php">Portfolio</a></span>
                     <span class="menu-item"><a href="about4.php">About</a></span>
-                    <span class="menu-item"><a href="contact.php" target="_blank">Contact</a></span>
+                    <!-- <span class="menu-item"><a href="contact.php" target="_blank">Contact</a></span> -->
+                    <span class="menu-item"><a href="contact.php">Contact</a></span>
                 </ul>
             </div>
 
@@ -26,7 +27,8 @@
                             <a href="home.php"">Home</a>
                             <a href="portfolio4.php">Portfolio</a>
                             <a href="about4.php">About</a>
-                            <a href="contact.php" target="_blank">Contact</a>
+                            <!-- <a href="contact.php" target="_blank">Contact</a> -->
+                            <a href="contact.php">Contact</a>
 
                         </div>
                     </li>

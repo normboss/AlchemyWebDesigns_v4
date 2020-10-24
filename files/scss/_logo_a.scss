@@ -1,0 +1,127 @@
+
+
+    .logo-a {
+        // outline: 3px solid red;
+        text-align: center;
+        color: white;
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+        position: relative;
+        top: -20px;
+        left: 15px;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        background-color: #638991;
+        // color: black;
+        opacity: 1;
+        width: 286px;
+        height: 80px;
+        background: #638991 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 8px #02000080;
+        opacity: 1;
+        @include max-mixin(500px) {
+            // left: 30px;
+            width: 225px;            
+        }
+
+        &__title {
+            // outline: 3px solid blue;
+            font-family: "Major Mono Display", monospace;
+            // text-shadow: 2px 2px;
+            font-weight: 800;
+            font-size: 77px;
+            word-spacing: 10px;
+            // @include max-mixin(500px) {
+            //     font-size: 17vw;
+            // }
+            // font: Regular 77px/92px Major Mono Display;
+            // letter-spacing: -7.7px;
+            color: #fcf9f9;
+            // text-shadow: 0px 8px 8px #00000040;
+
+            text-align: left;
+            // font: Regular 77px/92px Major Mono Display;
+            // font-size: #{'clamp(30px, 5vw, 77px)'};
+            --s-font: 30px;
+            --m-font: 5vw;
+            --l-font: 47px;
+            // $fontsize1: #{"max( max(calc(30px), calc(5vw)), min( calc(5vw), calc(77px) ) )"};
+            $fontsize1: #{"max( max(calc(var(--s-font)), calc(var(--m-font))), min( calc(var(--m-font)), calc(var(--l-font)) ) )"};
+            font-size: $fontsize1;
+            // @include myclamp(30px, 5vw, 77px);
+
+            // letter-spacing: -4px; //-7.7px;
+            letter-spacing: -0.5vw;
+            color: #fcf9f9;
+            // text-shadow: 0px 8px 8px #00000040;
+            // opacity: 1;
+            width: 286px; //100%;
+            font-size: 47px;
+            text-align: center;
+            letter-spacing: -4.7px;
+            color: #fcf9f9;
+            // padding-top: 8px;
+            //position: relative;
+            // top: 8px; //calc(41px - 33px);
+            height: 47px;
+            // line-height: 56px;
+            padding-top: 0;
+            width: 100%;
+            @include max-mixin(500px) {
+                font-size: 38px;
+                // margin-left: 0;
+                // padding-left: 0;
+            }
+        }
+
+        &__sub-title {
+            // border: 3px solid green;
+            // font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 1vw; //14px;
+
+            // text-align: left;
+            font: Regular 18px/22px Inria Sans;
+            font-family: "inrai Sans";
+            letter-spacing: 1.5vw; //18px;
+            color: #fcf9f9;
+            // text-shadow: 0px 6px 8px #00000052;
+            text-transform: uppercase;
+            opacity: 1;
+
+            text-align: left;
+            font: Regular 10px/12px Inria Sans;
+            font-family: "Inria Sans", sans-serif;
+            letter-spacing: 10px;
+            color: #fcf9f9;
+            text-shadow: 0px 6px 8px #00000052;
+            text-transform: uppercase;
+            opacity: 1;
+            margin-top: 5px;
+            margin-bottom: 8px;
+            $fontsize1: #{"max( max(calc(12px), calc(1vw)), min( calc(1vw), calc(18px) ) )"};
+            font-size: $fontsize1;
+            // font-size: 12px;
+            // color: black;
+            // background-color: #ccc; // white;
+            // opacity: .5;
+            // border-radius: 5px;
+            // width: 450px;
+            font-family: "Inria Sans", sans-serif;
+            text-align: center;
+            font-size: 10px;
+            //position: relative;
+            top: 5px;
+
+            @include max-mixin(500px) {
+                // font-size: 4vw;
+                letter-spacing: 6px; //10px;
+                margin: 0 auto;
+                // padding-left: 30px;
+                margin-top: 5px;
+            }
+        }
+    }
